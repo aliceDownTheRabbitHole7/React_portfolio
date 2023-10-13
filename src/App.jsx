@@ -1,7 +1,8 @@
 import './App.css'
 import ContactInfo from './components/ContactInfo'
-import SideBar from './components/SideBar'
-import Projects from './components/Projects'
+import SideBar from './components/SideBar/SideBar'
+import Projects from './components/Projects/Projects'
+
 
 function App() {
   return (

@@ -1,3 +1,22 @@
+:root {
+  --bg-gradient-light: rgba(39, 170, 245, 0.5);
+  --bg-gradient-dark: rgba(39, 170, 245, 0.9);
+}
+
 html, body {
   height: 100vh;
+}
+
+body {
+  background-image: 
+    linear-gradient(
+        120deg,
+        var(--bg-gradient-light),
+        var(--bg-gradient-dark)
+    ),
+    url('./components/icons/wallpaper.webp');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    width: 100%;
 }
