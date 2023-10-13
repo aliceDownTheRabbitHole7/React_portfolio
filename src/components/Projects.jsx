@@ -5,7 +5,7 @@ import markdownIcon from "./icons/icon-markdown.png";
 import jsCalculatorIcon from "./icons/icon-calculator.png";
 import blackJackIcon from "./icons/icon-blackjack.png";
 
-function Projects() {
+function Projects({ }) {
 
   const whackAMole = "https://alicedowntherabbithole7.github.io/Whack-a-mole/";
   const quoteMachine = "https://alicedowntherabbithole7.github.io/quote_machine/";
@@ -59,19 +59,20 @@ function Projects() {
     }
   ]
 
-  const iconList = projectsArray.map((project) => <img src={project.icon} key={project.id} />);
-
-  const linkList = projectsArray.map((site) => (
-    <a href={site.link} key={site.ref} className="project" target='_blank'>
-      {iconList}
+  const projectsList = projectsArray.map((project) => (
+    <a href={project.link} key={project.ref} className="project" target='_blank'>
+      <img src={project.icon} key={project.id} />
+      <h3 className='project-head'>{project.head}</h3>
     </a>
   ));
 
   return (
-    <div>
+    <>
       <h1 id="projects-head">Projects</h1>
-      {linkList}
-    </div>
+      <div className='projects-container'>
+        {projectsList}
+      </div>
+    </>
   );
 }
 
