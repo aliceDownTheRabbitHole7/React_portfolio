@@ -5,7 +5,7 @@
 
   --text-light: rgba(250, 250, 250, 1);
   --text-dark-blue: #003566;
-  --text-hover: #00ffcc;
+  --text-hover: rgba(0, 43, 39, 0.8);
   --text-header: rgba(50, 50, 50, 1);
 
   --border-gray: 3px outset rgba(1, 18, 35, 0.3);
@@ -81,6 +81,8 @@
 
 a:hover {
   color: var(--text-hover);
+  transform: scale(1.04);
+  transition: 1s;
 }
 
 .page-head {
@@ -112,6 +114,7 @@ a:hover {
   margin: 5vh 5vw 5vh 5vw;
   text-decoration: none;
 }
+
 
 a:hover {
   color: var(--text-hover);
