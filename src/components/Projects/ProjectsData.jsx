@@ -14,6 +14,11 @@ const blackJack = "https://alicedowntherabbithole7.github.io/Black_jack/";
 
 const projectsArray = [
   {
+    icon: santaIcon,
+    link: santaPage,
+    head: "Santa's Page",
+  },
+  {
     icon: moleIcon,
     link: whackAMole,
     head: "Whack-A-Mole!",
@@ -22,11 +27,6 @@ const projectsArray = [
     icon: quoteIcon,
     link: quoteMachine,
     head: "Quote Generator",
-  },
-  {
-    icon: santaIcon,
-    link: santaPage,
-    head: "Santa's Page",
   },
   {
     icon: markdownIcon,

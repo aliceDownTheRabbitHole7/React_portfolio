@@ -1,4 +1,4 @@
-import projectsArray from "./ProjectsArray";
+import projectsArray from "./ProjectsData";
 
 function Projects() {
 
